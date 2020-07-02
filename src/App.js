@@ -21,6 +21,7 @@ export class App extends React.Component {
     try {
       const { animals } = await getAllPets();
       this.setState({ pets: animals });
+      console.log("testing save");
     } catch (error) {
       console.error(error);
     }
